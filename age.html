@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Reminder</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1><span>Age Calculator</span></h1>
+        <form id="form">
+            <div class="container">
+                Full Name:<input type="text" placeholder="enter your fullname" id="name" required>
+            </div>
+            <div class="container">
+                Date of Birth: <input type="date" name="" id="date" required>
+            </div>
+            <div class="calculator">
+                
+                <label class="dob">Date of Birth</label>
+                <div class="input-box">
+                    <input type="date" name="" id="date">
+                </div>
+                <label class="dob1">Age at the Date of</label>
+                <div class="input-box1">
+                    <input type="date" name="" id="date1">
+                </div>
+                <button onclick="calculateage()" class="button">Result</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+<script>
+    var form = document.getElementById('form')
+
+    form.addEventListener('submit', function (event) {
+        event.preventDefault()
+
+        var name = document.getElementById('name').value
+        console.log(name)
+
+        var date = document.getElementById('date').value
+        console.log(date)
+        document.getElementById("form").reset();
+    })
+    
+        let userinput = document.getElementById("date");
+        userinput.max = new Date().toISOString().split("T")[0];
+
+        function calculateage(){
+            let birthDate = new Date(userInput.value);
+            
+            let d1 = birthDate.getDate();
+            let m2 = birthDate.getmonth()+1;
+            let y1 = birthDate.getFullYear();
+            
+            let today = new date();
+
+            let d2 = today.getDate();
+            let m2 = today.getmonth()+1;
+            let y2 = today.getFullYear();
+
+            let d3,m3,y3;
+
+            y3 = y2-y1;
+
+            if(m2 >= m1){
+                m3 = m2 - m1;
+            }
+            else{
+                y3--;
+                m3 = 12 + m2-m1;
+            }
+            if(d2 >= d1){
+                d3 = d2 - d1;
+            }else{
+                m3--;
+                d3 = getDayIn Months(y1,m1)+d2 -d1;   
+            }
+            if(m3 < 0){
+                m3 = 11;
+                y3--;
+            }
+            function
+        }
+    
+
+
+</script>
+
+</html>
