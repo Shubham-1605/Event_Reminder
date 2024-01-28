@@ -1,6 +1,7 @@
 # Event_Reminder
 -- clone reprository
-    1.open cmd 
+    1.open cmd <br>
+    
     2.copy folder path
     3.write the folder path in cmd
     4.write git clone github link
