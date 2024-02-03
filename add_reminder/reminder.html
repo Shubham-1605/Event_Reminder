@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add_reminder</title>
+    <link rel="stylesheet" href="reminder.css">
+</head>
+
+<body>
+    <form class="reminder1" action="#" id="form">
+        <h1>Add Reminder</h1>
+        <label for="text">FullName:-</label>
+        <input class="name" type="text" placeholder="FullName" name="" id="text">
+        <br>
+        <label for="date">Reminder Date:-</label>
+        <input class="date" type="date" name="" id="date">
+        <br>
+        <label for="reminder">Reminder Name</label>
+        <input class="reminder" type="text" placeholder="Reminder" name="" id="reminder">
+        <br>
+        <label for="email">Email:-</label>
+        <input class="email" type="email" placeholder="Email" name="" id="email">
+        <br>
+        <input type="submit" value="submit">
+    </form>
+    <script src="reminder.js"></script>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+         //function to send the message when click on button send
+        function reminder(e){
+            e.preventdefault();
+            const  reminder1 = document.querySelector('.reminder'),
+                name = document.querySelector('.name'),
+                date = reminder.querySelector('.date'),
+                reminder = document.querySelector('.reminder'),
+                email = document.querySelector('.email'),
+                //function send email...
+               Email.send({
+    SecureToken : "5d4b4a49-bf9a-42fe-b413-7496666daa46",
+    To : 'shubham1605dj@gmail.com',
+    From : "email.value",
+    Subject : "Add Reminder",
+    Body : "reminder.value"
+}).then(
+  message => alert(message)
+); 
+        
+}
+    </script> -->
+</body>
+
+</html>
