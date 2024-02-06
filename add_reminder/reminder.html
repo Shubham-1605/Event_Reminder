@@ -10,31 +10,32 @@
 
 <body>
     <form class="reminder1" action="#" id="form">
-        
+        <h1>Add Reminder</h1>
         <table>
             <tr>
                 <td><label for="text">FullName:-</label> </td>
                 <td><input class="name" type="text" placeholder="FullName" name="" id="text"> </td>
             </tr>
             <tr>
-                <td> <label for="date">Reminder Date:-</label>
+                <td> <label for="date">Reminder Date:-</label></td>
+                <td> <input class="date" type="date" name="" id="date"></td>
+            </tr>
+            <tr>
+                <td> <label for="reminder">Reminder Name</label></td>
+                <td><input class="reminder" type="text" placeholder="Reminder" name="" id="reminder"></td>
+            </tr>
+            <tr>
+                <td> <label for="email">Email:-</label>
                 </td>
-                <td> <input class="date" type="date" name="" id="date">
+                <td> <input class="email" type="email" placeholder="Email" name="" id="email">
                 </td>
             </tr>
-          </table>
-        <h1>Add Reminder</h1>
-        
-        
-        <br>
-        <br>
-        <label for="reminder">Reminder Name</label>
-        <input class="reminder" type="text" placeholder="Reminder" name="" id="reminder">
-        <br>
-        <label for="email">Email:-</label>
-        <input class="email" type="email" placeholder="Email" name="" id="email">
-        <br>
-        <input type="submit" value="submit">
+            <tr>
+                <td> <input type="submit" value="submit">
+                </td>
+            </tr>
+        </table>
+
     </form>
     <script src="reminder.js"></script>
     <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
