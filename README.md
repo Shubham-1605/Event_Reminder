@@ -18,3 +18,5 @@ to push changes to github
 
 to change branch =git checkout branchname
 form validation in html and javascript
+git ignore = is used to ignore any folder in vs code to uplode in github.
+nodemon = is used to restart a server.
